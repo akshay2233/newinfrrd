@@ -1,0 +1,17 @@
+<h2 mat-dialog-title style="text-align: center;">Pick Ride</h2>
+<form class="form-container" [formGroup]="addrideform" novalidate (ngSubmit)="onSubmit()">
+    <mat-dialog-content class="mat-typography" style="    overflow: hidden;">
+        <mat-form-field appearance="outline">
+            <mat-label>Employee ID</mat-label>
+            <input formControlName="EmployeeID" matInput placeholder="Employee ID" (blur)="fnCheckDuplicate()">
+            <mat-error *ngIf="addrideform.controls.EmployeeID.invalid"> EmployeeID is required</mat-error>
+        </mat-form-field>
+
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="center">
+        <button class="textButton" type="button" (click)="fnCancel()" mat-stroked-button>CANCEL</button>
+        <button class="submit-btn" mat-raised-button>&nbsp;SUBMIT&nbsp;</button>
+
+    </mat-dialog-actions>
+</form>

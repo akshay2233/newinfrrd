@@ -1,0 +1,80 @@
+*{
+    color: #fff !important;
+    font-family: Montserrat;
+    
+
+}
+table {
+    width: 100%;
+   
+  }
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .tollbar{
+background-color: #2B2C41; 
+font-size: 12px;
+height: 50px;
+color: #fff !important;
+ }
+
+ .profileButton{
+     background-color: #09A79E !important;
+     margin-right: 5px;
+ }
+.table-container{
+    height: 100%;width: 100%;background-color:#3A3B55 ;
+    padding-top: 20px;
+}
+.mat-table{
+    background-color:#3A3B55 !important;  
+    margin-top: 20px;
+}
+
+
+.table-default-content{
+    width: 90% !important;
+        margin: 0 auto;
+}
+
+
+.searchinput{
+    background-color: inherit;
+    border: 1px solid white;
+    padding: 7px;
+    border-radius: 5px;
+    max-width: 186px !important;
+    text-align: left;
+    
+}
+
+::placeholder { 
+    color:    #fff !important;
+ }
+
+ ::ng-deep  .mat-paginator-container {
+    background-color:#3A3B55 !important;  
+
+
+ }
+
+ ::ng-deep .mat-menu-content{
+    background-color:#3A3B55 !important;  
+
+
+ }
+
+ .apply-btn{
+    background-color:#3A3B55 !important; 
+    color: #09A79E !important; 
+
+ }
+
+
+ td{
+    font-size: 14px !important;
+ }
+ th{
+    font-size: 13px !important;
+ }

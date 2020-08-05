@@ -1,0 +1,70 @@
+<h2 mat-dialog-title style="text-align: center;">Add Ride</h2>
+<form class="form-container" [formGroup]="addrideform" novalidate (ngSubmit)="onSubmit()">
+
+    <mat-dialog-content class="mat-typography">
+        <mat-form-field appearance="outline">
+            <mat-label>Employee ID</mat-label>
+            <input formControlName="EmployeeID" matInput placeholder="Employee ID" (blur)="fnCheckDuplicate()" >
+            <mat-error *ngIf="addrideform.controls.EmployeeID.invalid"> EmployeeID is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Vehicle Type</mat-label>
+            <mat-select formControlName="VehicleType">
+                <mat-option *ngFor="let item of lstVichleType" [value]="item.viewValue">
+                    {{item.viewValue}}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="addrideform.controls.VehicleType.invalid"> VehicleType is required</mat-error>
+
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Vehicle No</mat-label>
+            <input formControlName="VehicleNo" matInput placeholder="Vehicle No">
+            <mat-error *ngIf="addrideform.controls.VehicleNo.invalid"> VehicleNo is required</mat-error>
+        </mat-form-field>
+
+        <mat-grid-list cols="2" rowHeight="90px">
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>Pickup Point</mat-label>
+                    <input formControlName="PickupPoint" matInput placeholder="Pickup Point">
+                    <mat-error *ngIf="addrideform.controls.PickupPoint.invalid"> PickupPoint is required</mat-error>
+                </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>Destination</mat-label>
+                    <input formControlName="Destination" matInput placeholder="Destination">
+                    <mat-error *ngIf="addrideform.controls.Destination.invalid"> Destination is required</mat-error>
+                </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>Time</mat-label>
+                    <input formControlName="Time" type="time"  matInput placeholder="Time">
+                    <mat-error *ngIf="addrideform.controls.Time.invalid"> Time is required</mat-error>
+                </mat-form-field>
+            </mat-grid-tile>
+
+            <mat-grid-tile>
+                <mat-form-field appearance="outline">
+                    <mat-label>Vacant Seats</mat-label>
+                    <input formControlName="VacantSeats"  oninput="this.value = Math.abs(this.value)" type="number"  matInput placeholder="VacantSeats">
+                    <mat-error *ngIf="addrideform.controls.VacantSeats.invalid"> Vacant Seats is required</mat-error>
+                </mat-form-field>
+            </mat-grid-tile>
+        
+        </mat-grid-list>
+
+
+
+    </mat-dialog-content>
+    <mat-dialog-actions align="center">
+        <button class="textButton" type="button" (click)="fnCancel()" mat-stroked-button>CANCEL</button>
+        <button class="submit-btn" mat-raised-button>&nbsp;SUBMIT&nbsp;</button>
+
+    </mat-dialog-actions>
+</form>

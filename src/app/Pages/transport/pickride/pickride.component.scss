@@ -1,0 +1,150 @@
+
+*{
+    color: #d4c8c8 !important;
+        font-family: Montserrat;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container > * {
+    width: 100%;
+  }
+  .mat-card {
+    position: absolute;
+    width: 320px;
+   // height: 550px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    margin: -190px 0 0 -190px;
+    background-color: #3A3B55;
+  }
+  
+  
+  .limiter {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background: #3A3B55;
+
+  }
+  .container-login {      
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #3A3B55;
+
+  }
+  
+  .btn-block {
+    display: block;
+    width: 100%;
+    background-color: #09A79E;
+    color:#FFFF;
+    padding: 5px;
+
+  }
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+
+  
+ ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline
+  {
+      color: #ffff !important;
+  }
+
+  .mat-card-title{
+    text-align: center;
+    margin-bottom: 36px;
+    font-size: 40px;
+    color: #ffff !important;
+
+  }
+
+
+
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick {
+    color: #f44336 !important;
+}
+
+.condition{
+font-size: 10px;
+}
+
+.helpText{
+    padding: 9px;
+    float: right;
+}
+
+.textButton{
+    border: 1px solid #ffff !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+
+}
+
+::ng-deep  .mat-dialog-container {
+    background: #1D1E2C !important;
+
+}
+
+::ng-deep .mat-radio-button{
+    padding: 6px !important;
+}
+
+.mat-form-field {
+    width: 100% !important;
+    margin-left: 10px;
+}
+
+.textButton{
+    border: 1px solid #ffff !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+    font-size: 11px
+}
+
+.submit-btn{
+    background-color: #09A79E !important;color: #fff;margin-left: 10px;font-size: 11px;
+}
+
+::ng-deep .mat-select-value{
+    color: #fff !important;
+}
+
+::ng-deep .mat-select-panel{
+    background: #1D1E2C !important;
+
+}
